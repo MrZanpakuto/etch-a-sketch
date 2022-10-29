@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    
+    <div class="header">Sketch Me</div>
+
+    <div class="button-container">
+        <button class="black">Black</button>
+        <button class="rainbow">Rainbow</button>
+        <button class="choose">Choose: <input type="color" value="#e66465" id="input-color">
+        </button>
+        <button class="earser">Eraser</button>
+        <button class="clear">Clear</button>
+    </div>
+   
+    <div class="container-wrapper">
+        <div id="container"></div>
+    </div>
+
+    <div class="slider-container">
+        <div class= "slider-title">Pixel Size</div>
+        <input type="range" min="4" max="100" value="16" id="sizeRange" class="slider" oninput="this.nextElementSibling.value = this.value">
+        <output>16</output>
+        
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
